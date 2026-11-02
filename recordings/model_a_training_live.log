@@ -1,0 +1,52 @@
+$ python baseline2p5d/train_baseline.py   # Model A: EfficientNet-B0 2.5D, ImageNet-pretrained, retrain (scratch output dir)
+NVIDIA GeForce RTX 5070 Laptop GPU, 8151 MiB
+Runtime: torch=2.8.0+cu128, torchvision=0.23.0+cu128, GPU=NVIDIA GeForce RTX 5070 Laptop GPU, VRAM=7.616 GiB
+Manifest verified: train=185, val=47; class counts (0/1)={'train': {'0': 134, '1': 51}, 'val': {'0': 31, '1': 16}}
+ImageNet DEFAULT weights ready: ~/rec_scratch/A_train/baseline2p5d/.cache/torch/hub/checkpoints/efficientnet_b0_rwightman-7f5810bc.pth
+START smoke: 5 train / 47 val; seed=20261033, max_epochs=1
+a2: 4,183,198 trainable parameters
+Pretrained backbone warm-up: frozen for 2 epochs
+TIMING epoch=1 train+val=42.49s peak_VRAM=0.083 GiB (88909312 bytes)
+a2 01: train_loss=1.3972 val_loss=1.3032 val_AUROC=0.4485887096774193 best_epoch=1
+SMOKE SUMMARY: {"best_epoch": 1, "early_stop_epoch": null, "epoch_times_seconds": [42.494826943000135], "epochs_run": 1, "max_epochs": 1, "n_train": 5, "n_val": 47, "peak_vram_bytes": 111145472, "peak_vram_gib": 0.10351228713989258, "source_sha256": {"PORT_SPEC.md": "a6e595eb5cbdebfcf3f7392561b86b87a7dbb0cc765d30ba6013aa525604b881", "build_manifest.py": "45163f555467d10ae3935a1686a01a9c1bee5b7cf4438ff00795ecec04a7f30c", "cell_18.py": "63013535041e81a65d68e77236084fa6128cfc6aa43530497669e30d05ccd00f", "idh_core.py": "70a632885e04e2b4b17b8c3938f33bc8906edb3186400e0ac68b3b459e45de36", "idh_experiments.py": "51ad3a2777e7867b6c49334b098c5eed28cd9e7b1ec822f4f41487846634bd1c", "train_baseline.py": "2f089128752db320c65b91a07c092b73241726ed1b2ac32c61fae194145277b3"}, "stage": "smoke", "status": "passed", "threshold": 0.5, "val_auroc": 0.4516129032258065, "val_balanced_accuracy": 0.5, "wall_time_seconds": 44.8082681410001}
+SMOKE PASSED: epoch time=42.49s; peak VRAM=0.104 GiB (torch.cuda.max_memory_allocated=111145472 bytes)
+START full: 185 train / 47 val; seed=20261033, max_epochs=20
+a2: 4,183,198 trainable parameters
+Pretrained backbone warm-up: frozen for 2 epochs
+TIMING epoch=1 train+val=100.51s peak_VRAM=0.085 GiB (91247104 bytes)
+a2 01: train_loss=1.0463 val_loss=1.0438 val_AUROC=0.7338709677419355 best_epoch=1
+TIMING epoch=2 train+val=0.72s peak_VRAM=0.085 GiB (91247104 bytes)
+a2 02: train_loss=0.9485 val_loss=0.9950 val_AUROC=0.7762096774193549 best_epoch=2
+Unfreezing pretrained ResNet backbone for fine-tuning
+TIMING epoch=3 train+val=7.88s peak_VRAM=0.308 GiB (331072512 bytes)
+a2 03: train_loss=1.0060 val_loss=0.9008 val_AUROC=0.8165322580645161 best_epoch=3
+TIMING epoch=4 train+val=1.38s peak_VRAM=0.308 GiB (331072512 bytes)
+a2 04: train_loss=0.9803 val_loss=0.9234 val_AUROC=0.8709677419354839 best_epoch=4
+TIMING epoch=5 train+val=1.40s peak_VRAM=0.308 GiB (331072512 bytes)
+a2 05: train_loss=0.8891 val_loss=0.8793 val_AUROC=0.8911290322580646 best_epoch=5
+TIMING epoch=6 train+val=1.37s peak_VRAM=0.308 GiB (331072512 bytes)
+a2 06: train_loss=0.9392 val_loss=0.8034 val_AUROC=0.9012096774193549 best_epoch=6
+TIMING epoch=7 train+val=1.38s peak_VRAM=0.308 GiB (331072512 bytes)
+a2 07: train_loss=0.5526 val_loss=0.8625 val_AUROC=0.875 best_epoch=6
+TIMING epoch=8 train+val=1.64s peak_VRAM=0.308 GiB (331072512 bytes)
+a2 08: train_loss=0.6337 val_loss=0.9850 val_AUROC=0.8266129032258065 best_epoch=6
+TIMING epoch=9 train+val=1.39s peak_VRAM=0.308 GiB (331072512 bytes)
+a2 09: train_loss=0.4033 val_loss=0.9517 val_AUROC=0.8528225806451613 best_epoch=6
+TIMING epoch=10 train+val=1.38s peak_VRAM=0.308 GiB (331072512 bytes)
+a2 10: train_loss=0.7566 val_loss=0.8442 val_AUROC=0.877016129032258 best_epoch=6
+TIMING epoch=11 train+val=1.38s peak_VRAM=0.308 GiB (331072512 bytes)
+a2 11: train_loss=0.5509 val_loss=1.0110 val_AUROC=0.8800403225806452 best_epoch=6
+Early stopping
+FULL SUMMARY: {"best_epoch": 6, "early_stop_epoch": 11, "epoch_times_seconds": [100.50857936000011, 0.716563643000427, 7.876757197000188, 1.3819898870001452, 1.3984017550001226, 1.3650204139999005, 1.3766046280002229, 1.6351441189999605, 1.3928291050001462, 1.3805276880002566, 1.3770213290003994], "epochs_run": 11, "max_epochs": 20, "n_train": 185, "n_val": 47, "peak_vram_bytes": 331072512, "peak_vram_gib": 0.3083353042602539, "source_sha256": {"PORT_SPEC.md": "a6e595eb5cbdebfcf3f7392561b86b87a7dbb0cc765d30ba6013aa525604b881", "build_manifest.py": "45163f555467d10ae3935a1686a01a9c1bee5b7cf4438ff00795ecec04a7f30c", "cell_18.py": "63013535041e81a65d68e77236084fa6128cfc6aa43530497669e30d05ccd00f", "idh_core.py": "70a632885e04e2b4b17b8c3938f33bc8906edb3186400e0ac68b3b459e45de36", "idh_experiments.py": "51ad3a2777e7867b6c49334b098c5eed28cd9e7b1ec822f4f41487846634bd1c", "train_baseline.py": "2f089128752db320c65b91a07c092b73241726ed1b2ac32c61fae194145277b3"}, "stage": "full", "status": "completed", "threshold": 0.5, "val_auroc": 0.9012096774193549, "val_balanced_accuracy": 0.8266129032258065, "wall_time_seconds": 123.2190642810001}
+
+FINAL SUMMARY
+Epochs run: 11; best epoch: 6; early stopping at epoch 11
+Fold-0 val (n=47): AUROC=0.901210; balanced accuracy=0.826613 (threshold=0.5)
+Peak VRAM: 0.308 GiB (331072512 bytes)
+Full-run wall time: 123.22s; procedure wall time: 168.38s
+Results: ~/rec_scratch/A_train/baseline2p5d/results
+
+real	2m51.426s
+user	4m57.175s
+sys	0m11.789s
+[exit code 0]

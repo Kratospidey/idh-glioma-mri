@@ -1,0 +1,34 @@
+$ # historical log of the 2026-10-30 Model B training run (epoch-time summary and excerpts)
+--- training_log_2026_10_30_04_49_05.txt
+2026-10-30 04:49:05.887056: do_dummy_2d_data_aug: False 
+epochs logged: 57, mean epoch time: 101.2 s, total: 1.60 h
+2026-10-30 06:00:17.884721: Yayy! New best EMA pseudo Dice: 0.7325000166893005 
+2026-10-30 06:03:40.060993: Yayy! New best EMA pseudo Dice: 0.7343999743461609 
+2026-10-30 06:25:36.215870: Current learning rate: 0.00792 
+--- training_log_2026_10_30_06_28_19.txt
+2026-10-30 06:28:19.933286: do_dummy_2d_data_aug: False 
+epochs logged: 193, mean epoch time: 100.9 s, total: 5.41 h
+2026-10-30 08:21:29.488873: Yayy! New best EMA pseudo Dice: 0.7468000054359436 
+2026-10-30 08:29:55.746418: Yayy! New best EMA pseudo Dice: 0.746999979019165 
+2026-10-30 11:54:10.653075: Current learning rate: 0.0004 
+--- first epochs of the first log
+2026-10-30 04:51:07.351151: Pseudo dice [np.float32(0.5005), np.float32(0.7539)] 
+2026-10-30 04:51:07.351189: Epoch time: 119.73 s 
+2026-10-30 04:52:48.375578: Pseudo dice [np.float32(0.7024), np.float32(0.8162)] 
+2026-10-30 04:52:48.375609: Epoch time: 100.71 s 
+2026-10-30 04:54:29.848998: Pseudo dice [np.float32(0.6631), np.float32(0.8167)] 
+2026-10-30 04:54:29.849028: Epoch time: 101.11 s 
+2026-10-30 04:56:10.987641: Pseudo dice [np.float32(0.6571), np.float32(0.7909)] 
+2026-10-30 04:56:10.987682: Epoch time: 100.78 s 
+2026-10-30 04:57:52.179495: Pseudo dice [np.float32(0.5997), np.float32(0.8123)] 
+--- final epochs of the second log
+2026-10-30 11:47:23.870513: Epoch time: 101.07 s 
+2026-10-30 11:49:05.605340: Pseudo dice [np.float32(0.6349), np.float32(0.8246)] 
+2026-10-30 11:49:05.605366: Epoch time: 101.44 s 
+2026-10-30 11:50:47.257226: Pseudo dice [np.float32(0.6534), np.float32(0.8308)] 
+2026-10-30 11:50:47.257261: Epoch time: 101.23 s 
+2026-10-30 11:52:28.681809: Pseudo dice [np.float32(0.6068), np.float32(0.8245)] 
+2026-10-30 11:52:28.681849: Epoch time: 101.12 s 
+2026-10-30 11:54:10.323758: Pseudo dice [np.float32(0.6365), np.float32(0.8234)] 
+2026-10-30 11:54:10.323797: Epoch time: 101.31 s 
+[exit code 0]
