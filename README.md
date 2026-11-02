@@ -358,6 +358,25 @@ Terminal recordings of the project code running on the project laptop (NVIDIA RT
 | [Model B test metrics](recordings/model_b_test_metrics_live.mp4) (live) | Saved nnU-Net checkpoint (epoch 121) predicting the 60 test patients, then the fusion and majority-vote metrics: accuracy 0.90, sensitivity 0.882, specificity 0.907, AUROC 0.932 | 1:26 |
 | [Model B training](recordings/model_b_training_historical_log.mp4) (**historical, not live**) | Excerpts of the real training logs and the `progress.png` curves from the 2026-10-30 run. A full Model B training run takes about 7 hours (about 101 s per epoch), so it was not re-run for the video. The run used the 250-epoch budget and was stopped after epoch 243; training was interrupted at epoch 57 and resumed from the epoch-50 checkpoint (two log files, 57 + 193 logged epochs, so epochs 50-57 were trained twice), best checkpoint at epoch 121 | 0:19 |
 
+
+### Inline playback
+
+**Model A training (live run, 3:05)**
+
+https://github.com/user-attachments/assets/8a9eeb3a-c296-42da-9a4c-b83e9defcaf4
+
+**Model A test metrics (live run, 1:20)**
+
+https://github.com/user-attachments/assets/4e7ab95f-ddb5-469d-b43c-2128f86b6231
+
+**Model B test metrics (live run, 1:26)**
+
+https://github.com/user-attachments/assets/af0afdcd-1268-4b56-b0d4-435be56bff1b
+
+**Model B training (HISTORICAL LOG - NOT A LIVE RUN, 0:19). This is the existing 2026-10-30 training log/graph; Model B was not retrained.**
+
+https://github.com/user-attachments/assets/2c0c5492-48c4-43b5-8480-f52b45842808
+
 ## Data
 
 All patients come from the public **UCSF-PDGM** cohort (CC-BY; please attribute in any
