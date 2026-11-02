@@ -68,7 +68,7 @@ Every snippet below is copied verbatim from the file named above it (line number
             elif cfg.backbone=='efficientnet_b0': model.encoder[0].eval()  # keep pretrained BatchNorm statistics fixed during warm-up
 ```
 
-**Architecture configuration** - `baseline2p5d/train_baseline.py` L46-56 is the winning configuration as run; `baseline2p5d/cell_18.py` L1-18 defines the candidate trials that were compared (the `RUN_*` flags switch which candidates are trained).
+**Architecture configuration** - `baseline2p5d/train_baseline.py` L46-56 is the winning configuration as run; `baseline2p5d/cell_18.py` L1-18 lists four candidate trials; three were executed (the from-scratch candidate's flag was off), and the `RUN_*` flags switch which candidates train.
 
 ```python
 def winner_config():
@@ -356,7 +356,7 @@ Terminal recordings of the project code running on the project laptop (NVIDIA RT
 | [Model A training](recordings/model_a_training_live.mp4) (live) | Retrain of the 2.5D EfficientNet-B0 on the fixed 185/47 split: 11 epochs, best epoch 6, validation AUROC 0.901, 123 s of training | 3:05 |
 | [Model A test metrics](recordings/model_a_test_metrics_live.mp4) (live) | Saved `best.pt` scored on the 60 held-out test patients: accuracy 0.85, sensitivity 0.706, specificity 0.907, AUROC 0.910 | 1:20 |
 | [Model B test metrics](recordings/model_b_test_metrics_live.mp4) (live) | Saved nnU-Net checkpoint (epoch 121) predicting the 60 test patients, then the fusion and majority-vote metrics: accuracy 0.90, sensitivity 0.882, specificity 0.907, AUROC 0.932 | 1:26 |
-| [Model B training](recordings/model_b_training_historical_log.mp4) (**historical, not live**) | Excerpts of the real training logs and the `progress.png` curves from the 2026-10-30 run. A full Model B training run takes about 7 hours (about 101 s per epoch), so it was not re-run for the video | 0:19 |
+| [Model B training](recordings/model_b_training_historical_log.mp4) (**historical, not live**) | Excerpts of the real training logs and the `progress.png` curves from the 2026-10-30 run. A full Model B training run takes about 7 hours (about 101 s per epoch), so it was not re-run for the video. The run used the 250-epoch budget and was stopped after epoch 243; training was interrupted at epoch 57 and resumed from the epoch-50 checkpoint (two log files, 57 + 193 logged epochs, so epochs 50-57 were trained twice), best checkpoint at epoch 121 | 0:19 |
 
 ## Data
 
