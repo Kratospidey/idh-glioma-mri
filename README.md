@@ -68,7 +68,7 @@ Every snippet below is copied verbatim from the file named above it (line number
             elif cfg.backbone=='efficientnet_b0': model.encoder[0].eval()  # keep pretrained BatchNorm statistics fixed during warm-up
 ```
 
-**Architecture configuration** - `baseline2p5d/train_baseline.py` L46-59 is the winning configuration as run; `baseline2p5d/cell_18.py` L1-18 defines the candidate trials that were compared (the `RUN_*` flags switch which candidates are trained).
+**Architecture configuration** - `baseline2p5d/train_baseline.py` L46-56 is the winning configuration as run; `baseline2p5d/cell_18.py` L1-18 defines the candidate trials that were compared (the `RUN_*` flags switch which candidates are trained).
 
 ```python
 def winner_config():
@@ -82,9 +82,6 @@ def winner_config():
         use_class_weight=True, adjacent_slices=3, locations=3, voxel_spacing=1.5,
         seed=20261033, early_patience=5, device="cuda",
     )
-
-
-def check_runtime():
 ```
 
 ```python
