@@ -1,0 +1,19 @@
+{
+  "python": "3.12.13 (main, May 10 2026, 19:30:01) [Clang 22.1.3 ]",
+  "executable": "<project>/.venv/bin/python",
+  "torch": "2.8.0+cu128",
+  "torchvision": "0.23.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "gpu_total_memory_bytes": 8177909760,
+  "torch_threads": 10,
+  "imagenet_weights": "EfficientNet_B0_Weights.IMAGENET1K_V1",
+  "source_sha256": {
+    "PORT_SPEC.md": "a6e595eb5cbdebfcf3f7392561b86b87a7dbb0cc765d30ba6013aa525604b881",
+    "idh_core.py": "70a632885e04e2b4b17b8c3938f33bc8906edb3186400e0ac68b3b459e45de36",
+    "idh_experiments.py": "51ad3a2777e7867b6c49334b098c5eed28cd9e7b1ec822f4f41487846634bd1c",
+    "cell_18.py": "63013535041e81a65d68e77236084fa6128cfc6aa43530497669e30d05ccd00f",
+    "build_manifest.py": "45163f555467d10ae3935a1686a01a9c1bee5b7cf4438ff00795ecec04a7f30c",
+    "train_baseline.py": "2f089128752db320c65b91a07c092b73241726ed1b2ac32c61fae194145277b3"
+  },
+  "split_sha256": "bedca88f73e2324fcc6d2a7b90922118d9b5c8938c6ba4c5e1ba3d69fbffcb23"
+}

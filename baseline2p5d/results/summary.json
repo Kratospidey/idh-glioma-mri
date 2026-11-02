@@ -1,0 +1,39 @@
+{
+  "stage": "full",
+  "status": "completed",
+  "n_train": 185,
+  "n_val": 47,
+  "epochs_run": 11,
+  "max_epochs": 20,
+  "best_epoch": 6,
+  "early_stop_epoch": 11,
+  "val_auroc": 0.9012096774193549,
+  "val_balanced_accuracy": 0.8266129032258065,
+  "threshold": 0.5,
+  "peak_vram_bytes": 331072512,
+  "peak_vram_gib": 0.3083353042602539,
+  "wall_time_seconds": 125.65933879999648,
+  "epoch_times_seconds": [
+    103.42435032200592,
+    0.7534531530036475,
+    6.779139621001377,
+    1.4538888210008736,
+    1.4293361910022213,
+    1.6630055259956862,
+    1.4639431619943934,
+    1.4711465490036062,
+    1.4378685670017148,
+    1.4470177330003935,
+    1.4348169259974384
+  ],
+  "source_sha256": {
+    "PORT_SPEC.md": "a6e595eb5cbdebfcf3f7392561b86b87a7dbb0cc765d30ba6013aa525604b881",
+    "idh_core.py": "70a632885e04e2b4b17b8c3938f33bc8906edb3186400e0ac68b3b459e45de36",
+    "idh_experiments.py": "51ad3a2777e7867b6c49334b098c5eed28cd9e7b1ec822f4f41487846634bd1c",
+    "cell_18.py": "63013535041e81a65d68e77236084fa6128cfc6aa43530497669e30d05ccd00f",
+    "build_manifest.py": "45163f555467d10ae3935a1686a01a9c1bee5b7cf4438ff00795ecec04a7f30c",
+    "train_baseline.py": "2f089128752db320c65b91a07c092b73241726ed1b2ac32c61fae194145277b3"
+  },
+  "procedure_wall_time_seconds": 174.8269053890035,
+  "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU"
+}

@@ -1,0 +1,12 @@
+{
+ "single_case_median_s": 3.16,
+ "batch_60_total_s": 59.3,
+ "batch_per_case_s": 0.99,
+ "call_agreement_vs_recorded": {
+  "agree": 60,
+  "unclassifiable": [],
+  "disagree": []
+ },
+ "peak_vram_mb": 352.5,
+ "note": "Model B self-segments (no GT mask needed). Timing = full 4-seg sliding-window dual-class nnU-Net inference per patient, mirroring on, same trainer/fold/checkpoint as run_test_eval.sh."
+}

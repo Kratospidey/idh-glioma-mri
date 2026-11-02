@@ -1,0 +1,15 @@
+# data, weights, caches - never published
+data/
+nnUNet_raw/
+nnUNet_preprocessed/
+nnUNet_results/
+*.pth
+*.ckpt
+*.pt
+*.nii
+*.nii.gz
+*.npz
+*.npy
+__pycache__/
+.cache/
+.venv/

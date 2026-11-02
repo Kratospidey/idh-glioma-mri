@@ -1,0 +1,17 @@
+{
+ "n_val": 47,
+ "n_evaluated": 47,
+ "unclassifiable": [],
+ "missing_pred": [],
+ "accuracy": 0.8723404255319149,
+ "sensitivity": 0.75,
+ "specificity": 0.9354838709677419,
+ "balanced_accuracy": 0.842741935483871,
+ "auroc": 0.8961693548387097,
+ "auprc": 0.8783750710997352,
+ "tp": 12,
+ "tn": 29,
+ "fp": 2,
+ "fn": 4,
+ "note": "DEVELOPMENT validation on fold-0 47 val only; quarantined VAL-58/TEST-60 untouched."
+}

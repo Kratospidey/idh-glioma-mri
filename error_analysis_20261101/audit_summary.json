@@ -1,0 +1,68 @@
+{
+ "test": {
+  "n_eval": 60,
+  "n_errors": 6,
+  "dice_all": {
+   "n": 60,
+   "mean": 0.8786,
+   "median": 0.942,
+   "min": 0.081,
+   "max": 0.9798
+  },
+  "dice_errors": {
+   "n": 6,
+   "mean": 0.8005,
+   "median": 0.9204,
+   "min": 0.1508,
+   "max": 0.9572
+  },
+  "dice_correct": {
+   "n": 54,
+   "mean": 0.8873,
+   "median": 0.944,
+   "min": 0.081,
+   "max": 0.9798
+  },
+  "iou_all": {
+   "n": 60,
+   "mean": 0.8175,
+   "median": 0.8903,
+   "min": 0.0422,
+   "max": 0.9604
+  },
+  "vote_ms_median": 76.65
+ },
+ "ext143": {
+  "n_eval": 143,
+  "n_errors": 9,
+  "dice_all": {
+   "n": 143,
+   "mean": 0.8984,
+   "median": 0.9332,
+   "min": 0.3262,
+   "max": 0.9773
+  },
+  "dice_errors": {
+   "n": 9,
+   "mean": 0.8572,
+   "median": 0.9197,
+   "min": 0.4236,
+   "max": 0.9606
+  },
+  "dice_correct": {
+   "n": 134,
+   "mean": 0.9012,
+   "median": 0.9333,
+   "min": 0.3262,
+   "max": 0.9773
+  },
+  "iou_all": {
+   "n": 143,
+   "mean": 0.8277,
+   "median": 0.8748,
+   "min": 0.1949,
+   "max": 0.9555
+  },
+  "vote_ms_median": 76.88
+ }
+}

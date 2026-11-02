@@ -1,0 +1,21 @@
+{
+ "n": 60,
+ "preprocess_cold_s": {
+  "mean": 0.983,
+  "median": 0.976,
+  "total": 59.0
+ },
+ "forward_warm_s": {
+  "mean": 0.0716,
+  "median": 0.0019,
+  "min": 0.0019,
+  "max": 4.1812,
+  "total": 4.3
+ },
+ "load_warm_s": {
+  "mean": 0.0019,
+  "median": 0.0018
+ },
+ "peak_vram_mb": 54.4,
+ "note": "Model A requires a supplied GT tumor mask for slice centering; timing excludes mask creation (human/segmenter input)."
+}

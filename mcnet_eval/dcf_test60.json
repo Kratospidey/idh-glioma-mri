@@ -1,0 +1,18 @@
+{
+ "pool": "test",
+ "n_pool": 60,
+ "n_evaluated": 60,
+ "unclassifiable": [],
+ "missing_pred": [],
+ "accuracy": 0.9,
+ "sensitivity": 0.8823529411764706,
+ "specificity": 0.9069767441860465,
+ "balanced_accuracy": 0.8946648426812585,
+ "auroc": 0.9316005471956224,
+ "auprc": 0.7960780836213363,
+ "tp": 15,
+ "tn": 39,
+ "fp": 4,
+ "fn": 2,
+ "checkpoint": "Dataset002 fold_0 checkpoint_best.pth epoch121 sha256 0b034ee40e5c4f9d (FIXED, no retuning)"
+}

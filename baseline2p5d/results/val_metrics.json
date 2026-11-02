@@ -1,0 +1,31 @@
+{
+  "n": 47,
+  "n_wildtype": 31,
+  "n_mutant": 16,
+  "accuracy": 0.851063829787234,
+  "balanced_accuracy": 0.8266129032258065,
+  "precision": 0.8,
+  "recall": 0.75,
+  "sensitivity": 0.75,
+  "specificity": 0.9032258064516129,
+  "macro_f1": 0.8315412186379928,
+  "auroc": 0.9012096774193549,
+  "auprc": 0.8886422787738577,
+  "brier": 0.11906082423992047,
+  "ece": 0.12349505490682862,
+  "confusion_matrix": [
+    [
+      28,
+      3
+    ],
+    [
+      4,
+      12
+    ]
+  ],
+  "auroc_bootstrap_ci95": [
+    0.7703921568627452,
+    0.9821007453567937
+  ],
+  "worst_domain_auroc": null
+}

@@ -1,0 +1,62 @@
+{
+  "experiment": "a2",
+  "flags": {
+    "balance": false,
+    "augment": true,
+    "consistency": false,
+    "adversarial": false
+  },
+  "config": {
+    "data_dir": "<project>/data/ucsf_core350",
+    "manifest_csv": "<project>/baseline2p5d/results/manifest.csv",
+    "output_dir": "<project>/baseline2p5d/results",
+    "cache_dir": "<project>/baseline2p5d/.cache/preprocessed",
+    "experiment_mode": "a2",
+    "domain_field": "vendor",
+    "sequences": [
+      "t1",
+      "t1ce",
+      "t2",
+      "flair"
+    ],
+    "voxel_spacing": 1.5,
+    "volume_shape": [
+      112,
+      112,
+      112
+    ],
+    "input_resolution": 112,
+    "adjacent_slices": 3,
+    "locations": 3,
+    "batch_size": 2,
+    "epochs": 20,
+    "lr": 0.0001,
+    "weight_decay": 0.0001,
+    "seed": 20261033,
+    "test_fraction": 0.2,
+    "val_fraction": 0.2,
+    "mixed_precision": true,
+    "accumulation_steps": 2,
+    "workers": 2,
+    "early_patience": 5,
+    "dropout": 0.2,
+    "hidden_dim": 128,
+    "backbone": "efficientnet_b0",
+    "pretrained_backbone": true,
+    "freeze_pretrained_epochs": 2,
+    "use_class_weight": true,
+    "use_n4_bias_correction": false,
+    "assume_coregistered": true,
+    "augment_strength": 0.4,
+    "consistency_lambda": 0.5,
+    "consistency_warmup_epochs": 3,
+    "adversarial_lambda": 0.1,
+    "threshold": 0.5,
+    "run_explanations": false,
+    "run_lodo": false,
+    "external_manifest_csv": "",
+    "resume": false,
+    "device": "cuda"
+  },
+  "domain_categories": []
+}

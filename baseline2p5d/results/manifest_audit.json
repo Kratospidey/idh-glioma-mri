@@ -1,0 +1,18 @@
+{
+  "fold": 0,
+  "source_split": "<project>/nnUNet_preprocessed/Dataset002_IDHMC/splits_final.json",
+  "source_labels": "<project>/ucsf493_labels_pools.csv",
+  "source_images": "<project>/data/ucsf_core350",
+  "allowed_pool": "train",
+  "class_counts": {
+    "train": {
+      "0": 134,
+      "1": 51
+    },
+    "val": {
+      "0": 31,
+      "1": 16
+    }
+  },
+  "mask": "raw BraTS labels; notebook uses mask > 0 for tumour centering/slices"
+}

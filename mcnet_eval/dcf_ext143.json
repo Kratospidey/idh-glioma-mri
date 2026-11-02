@@ -1,0 +1,18 @@
+{
+ "pool": "ext143",
+ "n_pool": 143,
+ "n_evaluated": 143,
+ "unclassifiable": [],
+ "missing_pred": [],
+ "accuracy": 0.9370629370629371,
+ "sensitivity": null,
+ "specificity": 0.9370629370629371,
+ "balanced_accuracy": null,
+ "auroc": null,
+ "auprc": null,
+ "tp": 0,
+ "tn": 134,
+ "fp": 9,
+ "fn": 0,
+ "checkpoint": "Dataset002 fold_0 checkpoint_best.pth epoch121 sha256 0b034ee40e5c4f9d (FIXED, no retuning)"
+}
