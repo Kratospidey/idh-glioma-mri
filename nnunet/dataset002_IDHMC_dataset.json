@@ -1,0 +1,17 @@
+{
+  "channel_names": {
+    "0": "T1",
+    "1": "T1c",
+    "2": "T2",
+    "3": "FLAIR"
+  },
+  "labels": {
+    "background": 0,
+    "IDH_mutant": 1,
+    "IDH_wildtype": 2
+  },
+  "numTraining": 232,
+  "file_ending": ".nii.gz",
+  "name": "IDHMC",
+  "description": "UCSF-PDGM TRAIN-232 pool only; dual-class whole-tumor labels (1 = IDH-mutant, 2 = IDH-wildtype)"
+}
